@@ -37,21 +37,17 @@ cd tu-proyecto
 ```bash
 npm install
 ```
-4. Crea un archivo .env en el directorio raíz y configura tu clave de API de OpenAI.
-```bash
-OPENAI_API_KEY=mi_api_key
-```
-5. Inicia el servidor.
+4. Inicia el servidor.
 ```bash
 npm start
 ```
-6. Abre tu navegador y visita http://localhost:3000.
+5. Abre tu navegador y visita http://localhost:3000.
 
 ## Tecnologías Utilizadas
 
 - Node.js
 - Express.js
-- OpenAI GPT-3
+- Terser
 - HTML, CSS, JavaScript
 ## Contribuciones
 ¡Contribuciones son bienvenidas! Si deseas contribuir a este proyecto, por favor sigue estos pasos:
