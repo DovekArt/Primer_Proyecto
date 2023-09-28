@@ -5,6 +5,7 @@ const codeTextarea = document.getElementById('code');
 const codigoOptimizadoTextarea = document.getElementById('codigoOptimizado');
 const descargarCodigoLink = document.getElementById('descargarCodigo');
 const copiarCodigoButton = document.getElementById('copiarCodigo');
+const optimizedCodeDiv = document.getElementById('optimizedCode'); // Captura el div "optimizedCode"
 
 // Maneja la presentación del resultado
 codeForm.addEventListener('submit', async (e) => {
@@ -27,8 +28,8 @@ codeForm.addEventListener('submit', async (e) => {
 
   codigoOptimizadoTextarea.value = codigoOptimizado;
 
-  // Mostrar el div con id "optimizedCode"
-  document.getElementById('optimizedCode').style.display = 'block';
+  // Muestra el div "optimizedCode"
+  optimizedCodeDiv.style.display = 'block';
 
   // Actualiza el enlace de descarga con el título
   descargarCodigoLink.download = `${titulo}.js`;
