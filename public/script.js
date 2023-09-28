@@ -11,8 +11,6 @@ codeForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   const titulo = tituloInput.value;
   const codigo = codeTextarea.value;
-  // Mostrar el div con id "optimizedCode"
-  document.getElementById('optimizedCode').style.display = 'block';
 
   // Envía el código al servidor para su optimización
   const response = await fetch('/optimizar', {
@@ -28,6 +26,9 @@ codeForm.addEventListener('submit', async (e) => {
   const codigoOptimizado = data.codigoOptimizado;
 
   codigoOptimizadoTextarea.value = codigoOptimizado;
+
+  // Mostrar el div con id "optimizedCode"
+  document.getElementById('optimizedCode').style.display = 'block';
 
   // Actualiza el enlace de descarga con el título
   descargarCodigoLink.download = `${titulo}.js`;
