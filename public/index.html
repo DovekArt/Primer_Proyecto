@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript AI Code Optimizer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>JavaScript AI Code Optimizer</h1>
+    <p>Optimiza tu código JavaScript utilizando inteligencia artificial.</p>
+    <form id="codeForm">
+      <label for="titulo">Título del Código Optimizado:</label>
+      <input type="text" id="titulo" name="titulo" placeholder="Ingresa un título">
+      <label for="code">Pega tu código JavaScript aquí:</label>
+      <textarea id="code" rows="10" cols="40"></textarea>
+      <button type="submit">Optimizar</button>
+    </form>
+    <div id="optimizedCode">
+      <h2>Código Optimizado</h2>
+      <label for="codigoOptimizado">Tu Código Optimizado:</label>
+      <textarea id="codigoOptimizado" readonly></textarea>
+      <a id="descargarCodigo" href="#" download="${titulo}.js">Descargar Código</a>
+      <button id="copiarCodigo">Copiar Código</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
